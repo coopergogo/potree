@@ -95,7 +95,9 @@
 		$("#menu_scene").next().show();
 		potreeViewer.toggleSidebar();
 	});
-	Potree.loadPointCloud("http://5.9.65.151/mschuetz/potree/resources/pointclouds/riegl/retz/cloud.js", "Retz", function(e){
+
+	// Potree.loadPointCloud("http://5.9.65.151/mschuetz/potree/resources/pointclouds/riegl/retz/cloud.js", "Retz", function(e){
+	Potree.loadPointCloud("http://54.205.148.134:18010/potree-data/data_converted/waterloo-block/metadata.json", "Retz", function(e){
 		let scene = potreeViewer.scene;
 		
 		scene.addPointCloud(e.pointcloud);
