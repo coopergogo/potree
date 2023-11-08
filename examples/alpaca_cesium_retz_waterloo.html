@@ -102,8 +102,26 @@
 		
 		scene.addPointCloud(e.pointcloud);
 		
-		//e.pointcloud.position.set(569277.402752, 5400050.599046, 0);
-		//e.pointcloud.rotation.set(0, 0, -0.035);
+		/* 
+		e.pointcloud.position.set(569277.402752, 5400050.599046, 0);
+		e.pointcloud.rotation.set(0, 0, -0.035);
+
+		scene.view.position.set(570975.577, 5398630.521, 1659.311);
+		scene.view.lookAt(570115.285, 5400866.092, 30.009);
+		// */
+
+		/* 
+		scene.view.position.set(0.0, 0.0, 1659.311);
+		scene.view.lookAt(0.0, 0.0, 30.009);
+		// */
+		
+		// /* 
+		e.pointcloud.position.set(570115.285, 5400866.092, 0);
+		e.pointcloud.rotation.set(0, 0, 0.0);
+
+		scene.view.position.set(570115.285, 5400866.092, 1659.311);
+		scene.view.lookAt(570115.285, 5400866.092, 30.009);
+		// */
 
 		let material = e.pointcloud.material;
 		material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
@@ -111,12 +129,6 @@
 		material.elevationRange = [0, 70];
 		material.weightRGB = 1.0;
 		material.weightElevation = 1.0;
-		
-		//scene.view.position.set(570975.577, 5398630.521, 1659.311);
-		//scene.view.lookAt(570115.285, 5400866.092, 30.009);
-
-		scene.view.position.set(0.0, 0.0, 1659.311);
-		scene.view.lookAt(0.0, 0.0, 30.009);
 
 /*
 		{
